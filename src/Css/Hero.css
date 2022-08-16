@@ -1,0 +1,41 @@
+.pc .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 4rem auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.pc .left {
+  padding: 1rem;
+}
+
+.pc h1 {
+  padding: 1rem 0;
+}
+
+.pc .input-container {
+  padding: 1rem 0;
+}
+
+.pc .right {
+  padding: 1rem;
+}
+
+.pc .img-container {
+  width: 100%;
+  display: flex;
+}
+
+.pc img {
+  max-width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 940px) {
+  .pc .container {
+    grid-template-columns: 1fr;
+    margin: 1rem 0;
+  }
+}

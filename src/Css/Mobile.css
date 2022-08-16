@@ -1,0 +1,30 @@
+.Mobile .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.Mobile .left {
+  text-align: center;
+}
+
+.Mobile img {
+  width: 300px;
+}
+
+.Mobile img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.Mobile .right p {
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 940px) {
+  .Mobile .container {
+    grid-template-columns: 1fr;
+  }
+}
