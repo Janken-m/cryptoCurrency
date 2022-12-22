@@ -18,21 +18,9 @@ class Navbar extends Component {
             <div className="collapse navbar-collapse justify-content-end d-flex mx-4">
               <NavLink
                 className="nav-link fw-bolder me-3  text-white"
-                to="/pool"
-              >
-                Pools
-              </NavLink>
-              <NavLink
-                className="nav-link fw-bolder me-3  text-white"
                 to="/market"
               >
                 Market
-              </NavLink>
-              <NavLink
-                className="nav-link fw-bolder me-3  text-white"
-                to="/contact"
-              >
-                Contact
               </NavLink>
               <NavLink
                 className="nav-link fw-bolder me-3  text-white"

@@ -30,7 +30,7 @@ function Footer() {
         <div className="col">
           <h5 className="text-white nav-link text-muted">Company</h5>
           <span className="collapse navbar-collapse"> </span>
-          <NavLink className="nav-link  fw-bolder text-white" to="/">
+          <NavLink className="nav-link  fw-bolder text-white" to="/about">
             About
           </NavLink>
           <NavLink className="nav-link  fw-bolder text-white" to="/">

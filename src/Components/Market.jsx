@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Config from "../config.json";
-import "bootstrap/dist/css/bootstrap.css";
 import { NavLink } from "react-router-dom";
 import { FiArrowUp, FiArrowDown } from "react-icons/fi";
 class Market extends Component {
@@ -11,7 +10,6 @@ class Market extends Component {
 
   async componentDidMount() {
     const result = await axios.get(`${Config.apiMarket}`);
-    console.log(result);
     this.setState({ coins: result.data });
   }
 
@@ -20,26 +18,6 @@ class Market extends Component {
     const { coins } = this.state;
     return (
       <div className="continer navbar navbar-dark bg-light">
-        <div className="collapse navbar-collapse justify-content-start d-flex my-4">
-          <NavLink
-            className="nav-link font-monospace fw-bold text-muted"
-            to="/"
-          >
-            Coins
-          </NavLink>
-          <NavLink
-            className="nav-link font-monospace fw-bold text-muted"
-            to="/market/gainerloser"
-          >
-            Gainer & Loser
-          </NavLink>
-          <NavLink
-            className="nav-link font-monospace fw-bold text-muted"
-            to="/"
-          >
-            New Listing
-          </NavLink>
-        </div>
         <table className="table">
           <thead>
             <tr>
